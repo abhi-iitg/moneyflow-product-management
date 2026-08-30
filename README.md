@@ -13,10 +13,6 @@ This repository is intentionally **PM-first**. It does not present a finance app
 [![🚀 Live MVP](https://img.shields.io/badge/🚀%20Live%20MVP-Open%20MoneyFlow-0f766e?style=for-the-badge&logo=streamlit&logoColor=white)](https://moneyflow-appuct-management-abhi-iitg.streamlit.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-Source%20Code-181717?style=for-the-badge&logo=github)](https://github.com/abhi-iitg/moneyflow-product-management)
 
-### Live Product
-
-**[Open the MoneyFlow Working MVP →](https://moneyflow-appuct-management-abhi-iitg.streamlit.app/)**
-
 > **Demo:** The MVP uses synthetic/demo financial data. Never upload bank passwords, OTPs, card numbers, account credentials, or other sensitive information.
 
 ---
@@ -54,41 +50,6 @@ The MVP focuses on four capabilities:
 
 The MVP deliberately excludes investing advice, lending, payments, credit decisions, tax advice, and autonomous financial actions.
 
-## 📸 MVP Screenshots
-
-### MoneyFlow — Financial Check-in Dashboard
-
-![MoneyFlow Financial Check-in Dashboard](docs/screenshots/moneyflow-dashboard.png)
-
-### 2. Transaction Management
-
-![MoneyFlow Transactions](docs/screenshots/moneyflow-transactions.png)
-
-### 3. Budget Planning
-
-![MoneyFlow Planning](docs/screenshots/moneyflow-planning.png)
-
-### 4. Product Metrics
-
-![MoneyFlow Product Metrics](docs/screenshots/moneyflow-product-metrics.png)
-
-### 🚀 Live Demo
-
-**[Open MoneyFlow MVP →](https://moneyflow-appuct-management-abhi-iitg.streamlit.app/)**
-
-*Working MVP using synthetic/demo transaction data.*
-
-### What the MVP demonstrates
-
-- 💰 Income and expense overview
-- 📈 Net cash-flow visibility
-- 🔎 "What changed?" actionable insights
-- 📊 Spending-by-category analysis
-- 📁 CSV transaction upload
-- ✏️ Transaction categorization and correction
-- 🎯 Budget and savings-goal planning
-- 🔐 Privacy-first data handling
-
 ### North Star Metric
 
 **Weekly Actionable Financial Check-ins (WAFC)**
@@ -106,6 +67,24 @@ These are **product targets, not measured results**:
 - ≥ 60% of imported transactions are correctly categorized without manual correction after the first two weeks
 - < 2% of imported rows fail validation
 - < 1% of users report a high-severity privacy/trust issue
+
+---
+
+## 🧭 PM at a Glance
+
+| Area | MoneyFlow PM Work |
+|---|---|
+| Problem | Turning financial data into actionable decisions |
+| Target User | Digitally comfortable young professionals / students |
+| Core JTBD | Understand what changed and decide what to do next |
+| Product Strategy | Decision support over dashboard complexity |
+| MVP | Import → Understand → Plan → Act |
+| Prioritization | RICE framework + MVP trade-offs |
+| UX | Action-oriented financial check-in |
+| North Star Metric | Weekly Actionable Financial Check-ins |
+| Experimentation | Hypothesis → Test → Metric → Guardrail → Decision |
+| GTM | Targeted acquisition + activation-led onboarding |
+| Trust | Privacy, transparency and user control |
 
 ---
 
@@ -187,7 +166,6 @@ MoneyFlow-Product-Management/
 └── portfolio/
     └── case-study.md
 ```
-
 ---
 
 ## Product Method
@@ -220,6 +198,41 @@ MoneyFlow follows a repeatable PM operating loop:
 
 **Learn**
 → evaluate metrics and experiments, then iterate
+
+---
+
+## 📸 MVP Screenshots
+
+### MoneyFlow — Financial Check-in Dashboard
+
+![MoneyFlow Financial Check-in Dashboard](docs/screenshots/moneyflow-dashboard.png)
+
+### 2. Transaction Management
+
+![MoneyFlow Transactions](docs/screenshots/moneyflow-transactions.png)
+
+### 3. Budget Planning
+
+![MoneyFlow Planning](docs/screenshots/moneyflow-planning.png)
+
+### 4. Product Metrics
+
+![MoneyFlow Product Metrics](docs/screenshots/moneyflow-product-metrics.png)
+
+### 5. Goals
+
+![MoneyFlow Product Metrics](docs/screenshots/moneyflow-goals.png)
+
+### What the MVP demonstrates
+
+- 💰 Income and expense overview
+- 📈 Net cash-flow visibility
+- 🔎 "What changed?" actionable insights
+- 📊 Spending-by-category analysis
+- 📁 CSV transaction upload
+- ✏️ Transaction categorization and correction
+- 🎯 Budget and savings-goal planning
+- 🔐 Privacy-first data handling
 
 ---
 
@@ -287,6 +300,8 @@ See **[RUN_MVP.md](RUN_MVP.md)** for the complete test procedure and **[DEMO_SCR
 
 The prototype uses synthetic data, transparent rule-based categorization, session state, CSV import, category correction, budgets, savings goals, actionable insights and session-level product instrumentation.
 
+---
+
 ## Author
 
 **Abhishek Kumar Gond**  
@@ -295,6 +310,10 @@ IIT Guwahati | Product Management / Data & AI
 - **[Portfolio]()**
 - **[LinkedIn](https://www.linkedin.com/in/abhishekkumargond/)**
 
+---
+
 ## License
 
 Released under the [MIT License](LICENSE).
+
+---
