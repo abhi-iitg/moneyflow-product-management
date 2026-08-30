@@ -1,0 +1,27 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secrets
+.env
+.env.*
+
+# Local/private research data
+data/private/
+*.xlsx
+*.xls
+*.csv
+*.json
+
+# Generated exports
+exports/
