@@ -236,6 +236,79 @@ MoneyFlow follows a repeatable PM operating loop:
 
 ---
 
+## 👨‍💼 My PM Contribution
+
+This project was approached as a **Product Management problem**, not simply as a software-development exercise.
+
+I worked through:
+
+- Problem framing
+- User/persona definition
+- Jobs-to-be-Done
+- Customer journey
+- Competitive analysis
+- Product positioning
+- Product strategy
+- Feature prioritization using RICE
+- MVP definition
+- PRD and user stories
+- UX flows
+- Product metrics
+- Experiment design
+- GTM strategy
+- Risk and privacy considerations
+- Working MVP execution
+
+---
+
+## ⚡ Recruiter 60-Second View
+
+**Problem:** Users can see financial transactions but often struggle to convert them into decisions.
+
+**Insight:** The product opportunity is not another dashboard; it is an actionable financial decision-support loop.
+
+**Solution:** MoneyFlow converts transaction data into understandable insights, planning actions and measurable follow-through.
+
+**MVP:** CSV import → categorization → cash-flow analysis → actionable insight → budget/goal planning.
+
+**PM Methods:** JTBD, personas, competitive analysis, RICE, PRD, UX flows, metrics, experimentation and GTM.
+
+**Validation Approach:** Build the smallest testable product around the core decision-support loop before investing in bank integrations or advanced financial features.
+
+**Live:** [Open MoneyFlow MVP →](https://moneyflow-appuct-management-abhi-iitg.streamlit.app/)
+
+---
+
+## ⚖️ Key Product Decisions
+
+### Why CSV instead of direct bank integration?
+
+**Decision:** Start with CSV import.
+
+**Why:**
+
+- Faster MVP validation
+- Lower integration and compliance complexity
+- Greater user control over financial data
+- Allows validation of the core product value before building expensive integrations
+
+### Why rule-based categorization?
+
+**Decision:** Use transparent rules in the MVP.
+
+**Why:**
+
+- Explainable
+- Deterministic
+- Easy to debug
+- Appropriate for an early-stage prototype
+
+### Why not build investment or lending features?
+
+These capabilities were deliberately excluded because they introduce significantly greater financial, trust and compliance risks without being necessary to validate the initial product thesis.
+
+---
+
 ## Evidence Discipline
 
 This case study separates:
