@@ -3,6 +3,9 @@ from datetime import date
 import pandas as pd
 import streamlit as st
 
+if "actions" not in st.session_state:
+    st.session_state.actions = set()
+
 st.set_page_config(
     page_title="MoneyFlow — Financial Check-in",
     page_icon="💸",
@@ -265,6 +268,7 @@ with tab1:
             for idx, row in edited.iterrows():
                 original_idx = idx
                 st.session_state.transactions.loc[original_idx, "category"] = row["category"]
+            st.session_state.actions.add(category_correction")
             st.success("Category corrections saved for this session.")
             st.rerun()
 
@@ -284,6 +288,7 @@ with tab2:
             label_visibility="collapsed",
         )
         st.session_state.budgets[category] = new_budget
+        st.session_state.actions.add("budget_adjustment")
         status = max(new_budget - spent, 0)
         col3.progress(
             min(spent / new_budget, 1.0) if new_budget else 0,
@@ -301,6 +306,7 @@ with tab3:
         "Amount saved so far (₹)", min_value=0.0,
         value=float(st.session_state.goal_saved), step=500.0
     )
+    st.session_state.actions.add("goal_update")
     progress = min(st.session_state.goal_saved / st.session_state.goal_target, 1.0)
     st.progress(progress, text=f"{progress:.0%} complete")
     st.metric("Remaining", money(max(st.session_state.goal_target - st.session_state.goal_saved, 0)))
