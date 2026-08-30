@@ -17,6 +17,24 @@ This repository is intentionally **PM-first**. It does not present a finance app
 
 ---
 
+## 📑 Table of Contents
+
+- [🎯 Executive Summary](#-executive-summary)
+- [🧭 PM at a Glance](#-pm-at-a-glance)
+- [🎯 Product Decision in One Page](#-product-decision-in-one-page)
+- [🗂️ Repository Map](#️-repository-map)
+- [🔄 Product Method](#-product-method)
+- [📸 MVP Screenshots](#-mvp-screenshots)
+- [🧠 Evidence Discipline](#-evidence-discipline)
+- [📚 Research Basis](#-research-basis)
+- [⚠️ Important Disclaimer](#️-important-disclaimer)
+- [💼 Portfolio Positioning](#-portfolio-positioning)
+- [🚀 Working MVP](#-working-mvp)
+- [👨‍💻 Author](#-author)
+- [📄 License](#-license)
+
+---
+
 ## Executive Summary
 
 ### The problem
@@ -107,65 +125,100 @@ These are **product targets, not measured results**:
 
 ## Repository Map
 
+### 🚀 Working MVP
+
+| Resource | Purpose |
+|---|---|
+| [`app.py`](./app.py) | Working Streamlit MVP |
+| [`requirements.txt`](./requirements.txt) | MVP dependencies |
+| [`RUN_MVP.md`](./RUN_MVP.md) | Setup, testing and validation procedure |
+| [`DEMO_SCRIPT.md`](./DEMO_SCRIPT.md) | Recruiter-facing MVP demo walkthrough |
+| [`ARCHITECTURE.md`](./ARCHITECTURE.md) | MVP architecture and implementation overview |
+
+---
+
+### 🧭 Product Management Lifecycle
+
+| Stage | PM Artifacts |
+|---|---|
+| **01 — Discovery** | [Problem Statement](./01-discovery/problem-statement.md) · [User Research Plan](./01-discovery/user-research-plan.md) · [Personas](./01-discovery/personas.md) · [JTBD](./01-discovery/JTBD.md) · [Customer Journey](./01-discovery/customer-journey.md) · [Opportunity Solution Tree](./01-discovery/opportunity-solution-tree.md) |
+| **02 — Market** | [Competitive Analysis](./02-market/competitive-analysis.md) · [Market Sizing](./02-market/market-sizing.md) · [Positioning](./02-market/positioning.md) |
+| **03 — Strategy** | [Product Vision](./03-strategy/product-vision.md) · [Product Strategy](./03-strategy/product-strategy.md) · [Business Model](./03-strategy/business-model.md) · [Product Principles](./03-strategy/product-principles.md) |
+| **04 — Prioritization** | [Feature Backlog](./04-prioritization/feature-backlog.md) · [RICE Prioritization](./04-prioritization/RICE-prioritization.md) · [MVP Scope](./04-prioritization/MVP-scope.md) |
+| **05 — PRD** | [PRD](./05-prd/PRD.md) · [User Stories](./05-prd/user-stories.md) · [Acceptance Criteria](./05-prd/acceptance-criteria.md) · [Non-Functional Requirements](./05-prd/non-functional-requirements.md) |
+| **06 — UX** | [Information Architecture](./06-ux/information-architecture.md) · [User Flows](./06-ux/user-flows.md) · [Wireframe Specification](./06-ux/wireframe-spec.md) |
+| **07 — Roadmap** | [Product Roadmap](./07-roadmap/product-roadmap.md) · [Release Plan](./07-roadmap/release-plan.md) |
+| **08 — Metrics** | [North Star Metric](./08-metrics/north-star-metric.md) · [Metrics Tree](./08-metrics/metrics-tree.md) · [Funnel](./08-metrics/funnel.md) · [KPI Dictionary](./08-metrics/KPI-dictionary.md) |
+| **09 — Launch** | [GTM Strategy](./09-launch/GTM-strategy.md) · [Launch Plan](./09-launch/launch-plan.md) · [Stakeholder Plan](./09-launch/stakeholder-plan.md) |
+| **10 — Experimentation** | [Experiment Backlog](./10-experimentation/experiment-backlog.md) · [Onboarding Experiment](./10-experimentation/experiment-01-onboarding.md) |
+| **11 — Risk** | [Risk Register](./11-risk/risk-register.md) · [Privacy & Trust](./11-risk/privacy-trust.md) · [Assumptions](./11-risk/assumptions.md) |
+| **12 — Post-Launch** | [30/60/90-Day Plan](./12-post-launch/30-60-90-day-plan.md) · [Iteration Framework](./12-post-launch/iteration-framework.md) |
+
+---
+
+### 📸 Product Evidence & Supporting Material
+
+| Resource | Purpose |
+|---|---|
+| [`docs/screenshots/`](./docs/screenshots/) | Working MVP screenshots |
+| [`portfolio/`](./portfolio/) | Portfolio-ready case study material |
+| [`SOURCES.md`](./SOURCES.md) | Research and reference basis |
+| [`.github/`](./.github/) | GitHub repository configuration |
+
+---
+
+### 📄 Repository-Level Files
+
+| File | Purpose |
+|---|---|
+| [`README.md`](./README.md) | Main product case study and project overview |
+| [`LICENSE`](./LICENSE) | MIT License |
+| [`.gitignore`](./.gitignore) | Git ignore configuration |
+---
+
+### 📁 Repository Structure
+
 ```text
-MoneyFlow-Product-Management/
-├── README.md
-├── LICENSE
-├── .gitignore
-├── 01-discovery/
-│   ├── problem-statement.md
-│   ├── user-research-plan.md
-│   ├── personas.md
-│   ├── JTBD.md
-│   ├── customer-journey.md
-│   └── opportunity-solution-tree.md
-├── 02-market/
-│   ├── competitive-analysis.md
-│   ├── market-sizing.md
-│   └── positioning.md
-├── 03-strategy/
-│   ├── product-vision.md
-│   ├── product-strategy.md
-│   ├── business-model.md
-│   └── product-principles.md
-├── 04-prioritization/
-│   ├── feature-backlog.md
-│   ├── RICE-prioritization.md
-│   └── MVP-scope.md
-├── 05-prd/
-│   ├── PRD.md
-│   ├── user-stories.md
-│   ├── acceptance-criteria.md
-│   └── non-functional-requirements.md
-├── 06-ux/
-│   ├── information-architecture.md
-│   ├── user-flows.md
-│   └── wireframe-spec.md
-├── 07-roadmap/
-│   ├── product-roadmap.md
-│   └── release-plan.md
-├── 08-metrics/
-│   ├── north-star-metric.md
-│   ├── metrics-tree.md
-│   ├── funnel.md
-│   └── KPI-dictionary.md
-├── 09-launch/
-│   ├── GTM-strategy.md
-│   ├── launch-plan.md
-│   └── stakeholder-plan.md
-├── 10-experimentation/
-│   ├── experiment-backlog.md
-│   └── experiment-01-onboarding.md
-├── 11-risk/
-│   ├── risk-register.md
-│   ├── privacy-trust.md
-│   └── assumptions.md
-├── 12-post-launch/
-│   ├── 30-60-90-day-plan.md
-│   └── iteration-framework.md
-└── portfolio/
-    └── case-study.md
-```
+moneyflow-product-management/
+│
+├── 📄 README.md
+├── 📄 LICENSE
+├── 📄 .gitignore
+│
+├── 🚀 Working MVP
+│   ├── app.py
+│   ├── requirements.txt
+│   ├── RUN_MVP.md
+│   ├── DEMO_SCRIPT.md
+│   └── ARCHITECTURE.md
+│
+├── 🧭 Product Management
+│   ├── 01-discovery/
+│   ├── 02-market/
+│   ├── 03-strategy/
+│   ├── 04-prioritization/
+│   ├── 05-prd/
+│   ├── 06-ux/
+│   ├── 07-roadmap/
+│   ├── 08-metrics/
+│   ├── 09-launch/
+│   ├── 10-experimentation/
+│   ├── 11-risk/
+│   └── 12-post-launch/
+│
+├── 📸 Product Evidence
+│   └── docs/
+│       └── screenshots/
+│
+├── 💼 Portfolio
+│   └── portfolio/
+│
+├── 📚 Research
+│   └── SOURCES.md
+│
+└── ⚙️ GitHub
+    └── .github/
+
 ---
 
 ## Product Method
@@ -279,7 +332,7 @@ I worked through:
 
 ---
 
-## ⚖️ Key Product Decisions
+## Key Product Decisions
 
 ### Why CSV instead of direct bank integration?
 
