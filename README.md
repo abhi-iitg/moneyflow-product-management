@@ -8,6 +8,12 @@ This repository is intentionally **PM-first**. It does not present a finance app
 
 ---
 
+## 🚀 Live Product Demo
+
+[**Open MoneyFlow MVP →**](https://moneyflow-appuct-management-abhi-iitg.streamlit.app/)
+
+---
+
 ## Executive Summary
 
 ### The problem
