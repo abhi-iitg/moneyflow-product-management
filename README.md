@@ -17,7 +17,7 @@ This repository is intentionally **PM-first**. It does not present a finance app
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 
 - [Executive Summary](#executive-summary)
 - [PM at a Glance](#pm-at-a-glance)
