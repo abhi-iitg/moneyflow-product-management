@@ -268,7 +268,7 @@ with tab1:
             for idx, row in edited.iterrows():
                 original_idx = idx
                 st.session_state.transactions.loc[original_idx, "category"] = row["category"]
-            st.session_state.actions.add(category_correction")
+            st.session_state.actions.add("category_correction")
             st.success("Category corrections saved for this session.")
             st.rerun()
 
