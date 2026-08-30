@@ -263,7 +263,7 @@ with tab1:
     if st.button("Save category corrections"):
         if not view.empty:
             for idx, row in edited.iterrows():
-                original_idx = view.index[idx]
+                original_idx = idx
                 st.session_state.transactions.loc[original_idx, "category"] = row["category"]
             st.success("Category corrections saved for this session.")
             st.rerun()
