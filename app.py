@@ -182,6 +182,7 @@ with st.sidebar:
         try:
             df_new = pd.read_csv(uploaded)
             st.session_state.transactions = normalize_transactions(df_new)
+            st.session_state.actions.add("csv_upload")
             st.success("CSV loaded successfully.")
         except Exception as e:
             st.error(str(e))
