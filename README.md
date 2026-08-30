@@ -19,19 +19,19 @@ This repository is intentionally **PM-first**. It does not present a finance app
 
 ## 📑 Table of Contents
 
-- [🎯 Executive Summary](#-executive-summary)
-- [🧭 PM at a Glance](#-pm-at-a-glance)
-- [🎯 Product Decision in One Page](#-product-decision-in-one-page)
-- [🗂️ Repository Map](#️-repository-map)
-- [🔄 Product Method](#-product-method)
-- [📸 MVP Screenshots](#-mvp-screenshots)
-- [🧠 Evidence Discipline](#-evidence-discipline)
-- [📚 Research Basis](#-research-basis)
-- [⚠️ Important Disclaimer](#️-important-disclaimer)
-- [💼 Portfolio Positioning](#-portfolio-positioning)
-- [🚀 Working MVP](#-working-mvp)
-- [👨‍💻 Author](#-author)
-- [📄 License](#-license)
+- [Executive Summary](#executive-summary)
+- [PM at a Glance](#pm-at-a-glance)
+- [Product Decision in One Page](#product-decision-in-one-page)
+- [Repository Map](#️repository-map)
+- [Product Method](#product-method)
+- [MVP Screenshots](#mvp-screenshots)
+- [Evidence Discipline](#evidence-discipline)
+- [Research Basis](#research-basis)
+- [Important Disclaimer](#️important-disclaimer)
+- [Portfolio Positioning](#portfolio-positioning)
+- [Working MVP](#working-mvp)
+- [Author](#author)
+- [License](#license)
 
 ---
 
@@ -88,7 +88,7 @@ These are **product targets, not measured results**:
 
 ---
 
-## 🧭 PM at a Glance
+## PM at a Glance
 
 | Area | MoneyFlow PM Work |
 |---|---|
@@ -125,7 +125,7 @@ These are **product targets, not measured results**:
 
 ## Repository Map
 
-### 🚀 Working MVP
+### Working MVP
 
 | Resource | Purpose |
 |---|---|
@@ -137,7 +137,7 @@ These are **product targets, not measured results**:
 
 ---
 
-### 🧭 Product Management Lifecycle
+### Product Management Lifecycle
 
 | Stage | PM Artifacts |
 |---|---|
@@ -156,7 +156,7 @@ These are **product targets, not measured results**:
 
 ---
 
-### 📸 Product Evidence & Supporting Material
+### Product Evidence & Supporting Material
 
 | Resource | Purpose |
 |---|---|
@@ -167,7 +167,7 @@ These are **product targets, not measured results**:
 
 ---
 
-### 📄 Repository-Level Files
+### Repository-Level Files
 
 | File | Purpose |
 |---|---|
@@ -176,7 +176,7 @@ These are **product targets, not measured results**:
 | [`.gitignore`](./.gitignore) | Git ignore configuration |
 ---
 
-### 📁 Repository Structure
+### Repository Structure
 
 ```text
 moneyflow-product-management/
@@ -254,7 +254,7 @@ MoneyFlow follows a repeatable PM operating loop:
 
 ---
 
-## 📸 MVP Screenshots
+## MVP Screenshots
 
 ### MoneyFlow — Financial Check-in Dashboard
 
@@ -289,7 +289,7 @@ MoneyFlow follows a repeatable PM operating loop:
 
 ---
 
-## 👨‍💼 My PM Contribution
+## My PM Contribution
 
 This project was approached as a **Product Management problem**, not simply as a software-development exercise.
 
@@ -314,7 +314,7 @@ I worked through:
 
 ---
 
-## ⚡ Recruiter 60-Second View
+## Recruiter 60-Second View
 
 **Problem:** Users can see financial transactions but often struggle to convert them into decisions.
 
