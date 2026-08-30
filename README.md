@@ -8,11 +8,44 @@ This repository is intentionally **PM-first**. It does not present a finance app
 
 ---
 
+ **FinTech Product Management case study + working MVP for a privacy-first personal finance decision-support product.**
+
+[![🚀 Live MVP](https://img.shields.io/badge/🚀%20Live%20MVP-Open%20MoneyFlow-0f766e?style=for-the-badge&logo=streamlit&logoColor=white)](https://moneyflow-appuct-management-abhi-iitg.streamlit.app/)
+[![GitHub](https://img.shields.io/badge/GitHub-Source%20Code-181717?style=for-the-badge&logo=github)](https://github.com/abhi-iitg/moneyflow-product-management)
+
+### 🚀 Live Product
+
+**[Open the MoneyFlow Working MVP →](https://moneyflow-appuct-management-abhi-iitg.streamlit.app/)**
+
+> **Demo:** The MVP uses synthetic/demo financial data. Never upload bank passwords, OTPs, card numbers, account credentials, or other sensitive information.
+
+
 ## 🚀 Live Product Demo
 
 [**Open MoneyFlow MVP →**](https://moneyflow-appuct-management-abhi-iitg.streamlit.app/)
 
 ---
+
+## 📑 Table of Contents
+
+- [🎯 Product Overview](#-product-overview)
+- [🚀 Live MVP](#-live-mvp)
+- [💡 Product Problem](#-product-problem)
+- [🧠 Product Thesis](#-product-thesis)
+- [👤 Target User](#-target-user)
+- [🔄 Core Product Loop](#-core-product-loop)
+- [🖥️ Working MVP](#️-working-mvp)
+- [📸 MVP Screenshots](#-mvp-screenshots)
+- [🧩 Product Management Work](#-product-management-work)
+- [🗂️ Repository Structure](#️-repository-structure)
+- [⚖️ Key Product Decisions](#️-key-product-decisions)
+- [📊 Metrics & Experimentation](#-metrics--experimentation)
+- [🔐 Safety, Privacy & Scope](#-safety-privacy--scope)
+- [🛠️ How to Run Locally](#️-how-to-run-locally)
+- [🎬 Recruiter Demo](#-recruiter-demo)
+- [🚧 Limitations & Next Steps](#-limitations--next-steps)
+- [📚 Evidence & Research](#-evidence--research)
+
 
 ## Executive Summary
 
