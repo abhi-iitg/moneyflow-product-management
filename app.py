@@ -268,6 +268,12 @@ st.divider()
 left, right = st.columns([1.3, 1])
 with left:
     st.subheader("What changed?")
+    st.info(
+        f"DEBUG — Largest category: "
+        f"{spending.index[0] if not spending.empty else 'None'} | "
+        f"Amount: "
+        f"{money(spending.iloc[0]) if not spending.empty else '₹0'}"
+    )
     for icon, title, body, action in build_insights(df):
         with st.container(border=True):
             st.markdown(f"### {icon} {title}")
