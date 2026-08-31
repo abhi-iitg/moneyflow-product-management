@@ -227,7 +227,10 @@ with left:
                 st.success("Action recorded for this demo session.")
 with right:
     st.subheader("Spending by category")
-    st.bar_chart(spending) if not spending.empty else st.info("No expenses available.")
+    if not spending.empty:
+        st.bar_chart(spending)
+    else:
+        st.info("No expenses available.")
 
 st.divider()
 tab1, tab2, tab3, tab4 = st.tabs(["Transactions", "Plan", "Goal", "Product Metrics"])
