@@ -115,29 +115,80 @@ def build_insights(df):
     income, expenses, net = get_metrics(df)
     spending = get_spending(df)
     items = []
+
+    # 1. Cash-flow insight
     if net > 0:
-        items.append(("💡", "Positive cash flow", f"You have {money(net)} left after recorded expenses.", "Update savings goal"))
+        items.append((
+            "💡",
+            "Positive cash flow",
+            f"You have {money(net)} left after recorded expenses.",
+            "Update savings goal"
+        ))
     elif net < 0:
-        items.append(("⚠️", "Negative cash flow", f"Your recorded expenses exceed income by {money(abs(net))}.", "Review transactions"))
+        items.append((
+            "⚠️",
+            "Negative cash flow",
+            f"Your recorded expenses exceed income by {money(abs(net))}.",
+            "Review transactions"
+        ))
     else:
-        items.append(("⚖️", "Cash flow is balanced", "Your recorded income currently equals your recorded expenses.", "Review transactions"))
+        items.append((
+            "⚖️",
+            "Cash flow is balanced",
+            "Your recorded income currently equals your recorded expenses.",
+            "Review transactions"
+        ))
 
+    # 2. Largest spending category — dynamically calculated
     if not spending.empty:
-        top_cat, top_val = str(spending.index[0]), float(spending.iloc[0])
-        items.append(("📌", f"{top_cat} is your largest spending category", f"You spent {money(top_val)} here in the loaded period.", "Review category"))
+        top_category = str(spending.index[0])
+        top_amount = float(spending.iloc[0])
 
-    subscriptions = float(spending.get("Subscriptions", 0))
-    if subscriptions > 1000 and (spending.empty or str(spending.index[0]) != "Subscriptions"):
-        items.append(("🔁", "Recurring subscription spend is notable", f"You spent {money(subscriptions)} on subscriptions. Review services you actively use.", "Review subscriptions"))
+        items.append((
+            "📌",
+            f"{top_category} is your largest spending category",
+            f"You spent {money(top_amount)} here in the loaded period.",
+            "Review category"
+        ))
 
+    # 3. Subscription insight
+    subscription_spend = float(spending.get("Subscriptions", 0))
+
+    if subscription_spend > 1000:
+        items.append((
+            "🔁",
+            "Recurring subscription spend is notable",
+            f"You spent {money(subscription_spend)} on subscriptions. Review services you actively use.",
+            "Review subscriptions"
+        ))
+
+    # 4. Budget pressure
     pressure = []
+
     for category, budget in st.session_state.budgets.items():
         spent = float(spending.get(category, 0))
+
         if budget > 0 and spent > budget:
-            pressure.append((spent - budget, category, spent, budget))
+            pressure.append((
+                spent - budget,
+                category,
+                spent,
+                budget
+            ))
+
     if pressure:
-        _, category, spent, budget = sorted(pressure, reverse=True)[0]
-        items.append(("📊", f"{category} is over its budget", f"You spent {money(spent)} against a {money(budget)} planning limit.", "Review budget"))
+        _, category, spent, budget = max(
+            pressure,
+            key=lambda x: x[0]
+        )
+
+        items.append((
+            "📊",
+            f"{category} is over its budget",
+            f"You spent {money(spent)} against a {money(budget)} planning limit.",
+            "Review budget"
+        ))
+
     return items[:3]
 
 
