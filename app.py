@@ -105,11 +105,17 @@ def get_metrics(df):
 
 
 def get_spending(df):
-    exp = df.loc[df.amount < 0]
-    if exp.empty:
-        return pd.Series(dtype=float)
-    return -exp.groupby("category")["amount"].sum().sort_values(ascending=False)
+    expenses_df = df.loc[df["amount"] < 0]
 
+    if expenses_df.empty:
+        return pd.Series(dtype=float)
+
+    return (
+        -expenses_df
+        .groupby("category")["amount"]
+        .sum()
+        .sort_values(ascending=False)
+    )
 
 def build_insights(df):
     income, expenses, net = get_metrics(df)
@@ -152,7 +158,9 @@ def build_insights(df):
         ))
 
     # 3. Subscription insight
-    subscription_spend = float(spending.get("Subscriptions", 0))
+    subscription_spend = float(
+        spending.get("Subscriptions", 0)
+    )
 
     if subscription_spend > 1000:
         items.append((
