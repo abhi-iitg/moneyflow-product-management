@@ -10,7 +10,7 @@
 <p align="center">
   <a href="https://moneyflow-appuct-management-abhi-iitg.streamlit.app/"><img src="https://img.shields.io/badge/🚀%20Live%20MVP-Open%20MoneyFlow-0f766e?style=for-the-badge&logo=streamlit&logoColor=white" alt="Live MVP"/></a>
   <a href="https://github.com/abhi-iitg/moneyflow-product-management"><img src="https://img.shields.io/badge/GitHub-Source%20Code-181717?style=for-the-badge&logo=github" alt="GitHub"/></a>
-  <a href="https://abhishek-kg-portfolio.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-Visit%20Website-2563eb?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
+  <a href="https://abhishek-kg-portfolio-pied.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-Visit%20Website-2563eb?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
   <a href="https://www.linkedin.com/in/abhishekkumargond/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="mailto:mr.abhishekaa@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-b91c1c?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
 </p>
@@ -588,10 +588,6 @@ MoneyFlow is a product-management case study and educational prototype—not a r
 
 **Abhishek Kumar Gond**  
 IIT Guwahati 
-
-- **Portfolio:** [abhishek-kg-portfolio.vercel.app](https://abhishek-kg-portfolio.vercel.app/)
-- **LinkedIn:** [abhishekkumargond](https://www.linkedin.com/in/abhishekkumargond/)
-- **Email:** [mr.abhishekaa@gmail.com](mailto:mr.abhishekaa@gmail.com)
 
 ---
 
