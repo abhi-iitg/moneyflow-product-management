@@ -587,7 +587,7 @@ MoneyFlow is a product-management case study and educational prototype—not a r
 ## Author
 
 **Abhishek Kumar Gond**  
-IIT Guwahati | Product Management / Data & AI
+IIT Guwahati 
 
 - **Portfolio:** [abhishek-kg-portfolio.vercel.app](https://abhishek-kg-portfolio.vercel.app/)
 - **LinkedIn:** [abhishekkumargond](https://www.linkedin.com/in/abhishekkumargond/)
