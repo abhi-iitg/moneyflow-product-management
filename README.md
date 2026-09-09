@@ -587,7 +587,7 @@ MoneyFlow is a product-management case study and educational prototype—not a r
 ## Author
 
 **Abhishek Kumar Gond**  
-IIT Guwahati 
+B.Tech Chemical Engineering @ IIT Guwahati 
 
 ---
 
